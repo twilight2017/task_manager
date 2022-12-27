@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tasks',
+    'widget_tweaks',  # 项目依赖
+    'django_tables2',  # 项目依赖
+    'django_filters',  # 项目依赖
+    'users',  # 自建应用
 ]
 
 MIDDLEWARE = [
