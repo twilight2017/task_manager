@@ -37,10 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'widget_tweaks',  # 项目依赖
-    'django_tables2',  # 项目依赖
-    'django_filters',  # 项目依赖
-    'users',  # 自建应用
+    'myapp',  # 自建应用
 ]
 
 MIDDLEWARE = [
@@ -106,6 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
+
+# set session engine
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 LANGUAGE_CODE = 'en-us'
 
